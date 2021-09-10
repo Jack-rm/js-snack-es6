@@ -1,7 +1,7 @@
 // ### S6 ###
 
 // SNACK #1
-
+/*
 // creo un array di oggetti
 const biciclette = [
     {
@@ -22,7 +22,7 @@ const biciclette = [
     }
 ]
 
-/*
+
 // Soluzione della mattina:
 
 let biciLeggera = biciclette[0];
@@ -40,7 +40,7 @@ document.getElementById("#id").innerHTML = "Bicicletta: " + biciLeggera.nome + "
 
 
 
-
+/*
 // Soluzione del pomeriggio:
 
 let biciLeggera;
@@ -68,7 +68,7 @@ for ( var i = 0; i < biciclette.length; i++){
 
 
 
-/*
+
 // Examples per destructoring normale ed inverso
 
 let b = bici ("mia",15);  // Indicizzo una variabile per la mia bici
@@ -126,7 +126,7 @@ for ( let bici of biciclette) {
 */
 
 
-
+/*
 // # Snack #2
 
 // Creo un array di oggetti
@@ -163,7 +163,7 @@ var squadreDiCalcio = [
     },
 ]
 
-/*
+
 // Soluzione della mattina
 
 for (var i = 0; i < squadreDiCalcio.length; i++){
@@ -177,6 +177,7 @@ let {nome, falliSubiti} = squadreDiCalcio;
 console.table(squadreDiCalcio);
 */
 
+/*
 
 // Soluzione del pomeriggio con "for ...of"
 
@@ -206,7 +207,7 @@ for (const squadra of squadreDiCalcio) {
 
 console.log(arrayNomiFalli);
 
-
+*/
 
 
 
@@ -262,6 +263,32 @@ let squadraArrow = {
 squadraArrow.setName("AltroNome");
 console.log(squadraArrow);
 */
+
+
+
+// Snack #3
+
+/**
+ * 
+ * Scrivere una funzione che accetti tre argomenti: un array e due numeri (a più piccolo di b).
+ * La funzione ritornerà un nuovo array con i valori
+ * che hanno la posizione (indice) compresa tra i due numeri specificati.
+ * Usiamo i nuovi metodi degli array forEach() o filter().
+ * 
+*/
+
+let numeri = [1,2,3,4,5,6,7,8,9];
+
+const numeriSpecifici = numeri.filter((numero) => {
+    let a = numeri[1];
+    let b = numeri[5];
+    return (numero >= a) && (numero <= b);
+});
+
+console.log(numeriSpecifici);
+
+
+
 
 
 
