@@ -280,16 +280,16 @@ console.log(squadraArrow);
 let numeri = [1,2,3,4,5,6,7,8,9];
 console.log(numeri);
 
-let a = parseInt(prompt("Inserisci un numero tra 0 e " + numeri.length -1));
-let b = parseInt(prompt("Inserisci un numero tra" + a + "e" + numeri.length -1));
+let a = parseInt(prompt("Inserisci un numero tra 0 e " + (numeri.length -1)));
+let b = parseInt(prompt("Inserisci un numero tra " + a + " e " + (numeri.length -1)));
 
 
 while (a < 0 || a >= numeri.length){
-    a = parseInt(prompt("Inserisci un numero tra 0 e " + numeri.length -1));
+    a = parseInt(prompt("Inserisci un numero tra 0 e " + (numeri.length -1)));
 }
 
 while ( b < a ) {
-    a = parseInt(prompt("Inserisci un numero tra " + b + "e" + numeri.length -1));
+    a = parseInt(prompt("Inserisci un numero tra " + b + "e" + (numeri.length -1)));
 }
 
 console.log(sliceOfArray(numeri,a,b));
